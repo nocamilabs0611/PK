@@ -1,8 +1,8 @@
 /**
  * Warehouse Configuration Service (A10)
  */
-import apiClient from './apiClient';
-import { DEFAULT_THRESHOLDS } from '../config/appConfig';
+import apiClient from './apiClient.js';
+import { DEFAULT_THRESHOLDS } from '../config/appConfig.js';
 
 export const configService = {
   async getConfig() {

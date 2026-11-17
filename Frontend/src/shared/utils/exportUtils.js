@@ -4,6 +4,9 @@
 
 export const downloadBlob = (content, filename, mimeType = 'text/plain') => {
   try {
+    if (typeof document === 'undefined') {
+      return false;
+    }
     const blob = new Blob([content], { type: mimeType });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');

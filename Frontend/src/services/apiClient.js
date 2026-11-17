@@ -5,7 +5,7 @@
  * When API_CONFIG.USE_MOCK is false, it executes real fetch requests against backend.
  */
 
-import { API_CONFIG } from '../config/appConfig';
+import { API_CONFIG } from '../config/appConfig.js';
 
 class ApiClient {
   constructor() {
@@ -29,7 +29,7 @@ class ApiClient {
 
   // Central request dispatcher
   async request({ endpoint, method = 'GET', data = null, mockResponse = null, latency = 250 }) {
-    if (this.useMock || mockResponse !== null) {
+    if (this.useMock) {
       await this.simulateLatency(latency);
       if (typeof mockResponse === 'function') {
         return mockResponse(data);

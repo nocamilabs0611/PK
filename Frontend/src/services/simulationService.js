@@ -1,7 +1,7 @@
 /**
  * What-If Simulation Service (A6)
  */
-import apiClient from './apiClient';
+import apiClient from './apiClient.js';
 
 export const simulationService = {
   async runSimulation(params) {

@@ -1,7 +1,7 @@
 /**
  * Analytics & Historical Performance Service (A7)
  */
-import apiClient from './apiClient';
+import apiClient from './apiClient.js';
 
 export const analyticsService = {
   async getMetrics(dateRange = '7d', zone = 'All Zones') {

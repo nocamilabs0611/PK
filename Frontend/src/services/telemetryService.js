@@ -1,7 +1,7 @@
 /**
  * Telemetry & Sensor Stream Service (A2 & Digital Twin)
  */
-import apiClient from './apiClient';
+import apiClient from './apiClient.js';
 
 export const telemetryService = {
   async getLiveStats() {

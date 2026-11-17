@@ -1,7 +1,7 @@
 /**
  * AI Predictions & Explainability Service (DSTGT v1.0)
  */
-import apiClient from './apiClient';
+import apiClient from './apiClient.js';
 
 export const predictionsService = {
   async getLivePrediction() {

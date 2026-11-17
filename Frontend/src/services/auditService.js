@@ -1,7 +1,7 @@
 /**
  * Central Audit Trail Service (A11 & Global Admin Rule)
  */
-import apiClient from './apiClient';
+import apiClient from './apiClient.js';
 
 export const auditService = {
   async getAuditLogs() {

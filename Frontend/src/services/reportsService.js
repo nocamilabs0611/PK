@@ -1,7 +1,7 @@
 /**
  * Reports & Intelligence Export Service (A8)
  */
-import apiClient from './apiClient';
+import apiClient from './apiClient.js';
 
 export const reportsService = {
   async getReports() {

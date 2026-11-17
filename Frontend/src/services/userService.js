@@ -1,7 +1,7 @@
 /**
  * User Access Management Service (A9)
  */
-import apiClient from './apiClient';
+import apiClient from './apiClient.js';
 
 export const userService = {
   async getUsers() {
