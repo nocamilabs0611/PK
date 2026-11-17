@@ -359,6 +359,19 @@ Inside the application, click the **"Switch to Operator"** or **"Switch to Admin
    npm run lint
    ```
 
+6. **Run the Test Suites**:
+   - **Frontend Test Suite** (Node native runner):
+     ```bash
+     cd Frontend
+     npm test
+     ```
+   - **Backend Test Suite** (Pytest + TestClient):
+     ```bash
+     cd Backend
+     python run_tests.py
+     ```
+     *(or `pytest tests/ -v`)*
+
 ---
 
 ## 🎓 Academic Viva / Project Defense Guide
@@ -402,3 +415,5 @@ separating Administrator operations from Floor Lead Operator workflows."
 ## 📜 License & Credits
 Developed for **TwinFlow Autonomous Warehouse Intelligence**.  
 All rights reserved © 2026. Built with modern web standards and high-performance WebGL.
+#   P K  
+ 
